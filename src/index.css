@@ -1,0 +1,29 @@
+@import "tailwindcss";
+
+@theme {
+  --color-ragda-primary: #1e3a5f;
+  --color-ragda-secondary: #2d6a9f;
+  --color-ragda-accent: #f59e0b;
+  --color-ragda-success: #10b981;
+  --color-ragda-danger: #ef4444;
+  --color-ragda-dark: #0f172a;
+  --color-ragda-light: #f8fafc;
+  --color-ragda-card: #1e293b;
+  --color-ragda-border: #334155;
+}
+
+body {
+  background-color: var(--color-ragda-dark);
+  color: #e2e8f0;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--color-ragda-dark); }
+::-webkit-scrollbar-thumb { background: var(--color-ragda-border); border-radius: 3px; }
+
+/* Print styles */
+@media print {
+  body { background: white; color: black; }
+  .no-print { display: none !important; }
+}
